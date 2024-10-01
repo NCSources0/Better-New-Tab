@@ -2,8 +2,9 @@ location.hash = '';
 
 const searchBar = document.getElementsByClassName("searchBar")[0],
   search = location.search.split("=")[1];
-
-location.hash = '#gsc.q=' + search;
+if (search) {
+  location.hash = '#gsc.q=' + search;
+}
 
 // There is probably a better way to do this...
 searchBar.value = "";
