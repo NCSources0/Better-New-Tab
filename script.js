@@ -1,8 +1,8 @@
 location.hash = '';
 
-const searchBar = document.getElementsByClassName("searchBar")[0],
-  search = location.search.split("=")[1];
-if (search) {
+const searchBar = document.getElementsByClassName('searchBar')[0],
+  search = location.search.split('=')[1];
+if (location.search != '') {
   location.hash = '#gsc.q=' + search;
 }
 
