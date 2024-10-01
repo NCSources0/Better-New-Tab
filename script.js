@@ -2,7 +2,8 @@ location.hash = '';
 
 const searchBar = document.getElementsByClassName('searchBar')[0],
   search = location.search.split('=')[1],
-  iframe = document.getElementsByClassName('page')[0];
+  iframe = document.getElementsByClassName('page')[0],
+  topBar = document.getElementsByClassName('topBar')[0];
 
 iframe.setAttribute('src', 'search.html#gsc.q=');
 if (location.search != '') {

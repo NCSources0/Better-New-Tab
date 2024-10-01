@@ -43,8 +43,8 @@ body {
   transition: top 0.25s;
 }
 
-.topBar:hover {
-  top: 0px;
+.topBar:hover, .topBar:focus-within {
+  top: 0;
 }
 
 .urlBar {
@@ -126,6 +126,7 @@ body {
 .tab {
   height: 45px;
   min-width: 145px;
+  max-width: 145px;
   cursor: pointer;
   border-radius: 5px;
   position: relative;
